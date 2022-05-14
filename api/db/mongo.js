@@ -5,10 +5,9 @@ const clientOptions = {
     dbName            : 'apinode'
 };
 
-exports.initClientDbConnection = async () => {
+exports.initClientDbConnection = () => {
     try {
-        await mongoose.connect(process.env.URL_MONGO, clientOptions)
-        console.log('Connected');
+        mongoose.connect(process.env.URL_MONGO, clientOptions)
     } catch (error) {
         console.log(error);
         throw error;

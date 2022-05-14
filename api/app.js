@@ -2,9 +2,11 @@ const express      = require('express');
 const cookieParser = require('cookie-parser');
 const logger       = require('morgan');
 const cors         = require('cors');
+const jwt          = require('jsonwebtoken')
 
 const indexRouter = require('./routes/v1/index');
 const mongodb     = require('./db/mongo');
+
 
 mongodb.initClientDbConnection();
 
