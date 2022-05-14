@@ -7,9 +7,20 @@ Projet node api avec tests fonctionnels Jest et cucumber
 
 ## Lancer le projet
 
-Run docker-compose -up
+```
 
-Run npm run test for Jest test
-Run npx cucumber-js
+git clone project
+cd api && npm install
+docker-compose up
 
-...
+```
+
+## Lancer les tests
+
+```
+
+cd api 
+npm test (run Jest test)
+npx cucumber-js (run cucumber test)
+
+```
